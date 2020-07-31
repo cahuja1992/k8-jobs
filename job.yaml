@@ -11,4 +11,7 @@ spec:
       containers:
       - name: c
         image: ahujachirag/job-wq-2
+        env:
+        - name: REDIS_SERVICE_HOST
+          value: localhost
       restartPolicy: OnFailure
